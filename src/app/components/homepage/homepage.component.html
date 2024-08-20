@@ -1,0 +1,27 @@
+<!-- <div class="post-list"> -->
+<div class="side-menu">
+  <img src="http://placehold.it/100/100" />
+  <a href="profile">View Profile</a>
+  <a href="network">Connections</a>
+</div>
+<div class="main">
+  <section>
+    <div class="text">
+      <img src="http://placehold.it/100/100" />
+      <textarea placeholder="What's in your mind"></textarea>
+      <input type="submit" value="post" />
+    </div>
+    <div class="list">
+      <mat-list>
+        <!-- <div class="row"> -->
+        @for (item of posts; track $index) {
+        <mat-list-item>
+          <post-chip [post]="item"></post-chip>
+        </mat-list-item>
+        }
+      </mat-list>
+      <!-- </div> -->
+    </div>
+  </section>
+  <!-- </div> -->
+</div>

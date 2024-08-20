@@ -1,0 +1,14 @@
+<h1>Connections</h1>
+@for (connection of connections; track $index) {
+<div class="connection-profile">
+  <div class="wrapper">
+    <div class="profile">
+      <div class="avatar"></div>
+      <p class="name">{{ connection.firstName + connection.lastName }}</p>
+      <p class="phoneNumber" title="Phone Number">
+        {{ connection.phoneNumber }}
+      </p>
+    </div>
+  </div>
+</div>
+}
